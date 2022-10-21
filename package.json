@@ -1,0 +1,37 @@
+{
+  "name": "@blastup/core_cms-components",
+  "version": "0.0.1",
+  "description": "Usable components for the Apps Store projects.",
+  "main": "./App.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/blastup/core_cms-components.git"
+  },
+  "author": "privacy@blastup.digital",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "@date-io/moment": "1.x",
+    "moment": "2.29.1",
+    "lodash.debounce": "4.0.8",
+    "@tiptap/extension-character-count": "2.0.0-beta.25",
+    "@tiptap/extension-color": "2.0.0-beta.9",
+    "@tiptap/extension-dropcursor": "2.0.0-beta.25",
+    "@tiptap/extension-link": "2.0.0-beta.36",
+    "@tiptap/extension-text-align": "2.0.0-beta.29",
+    "@tiptap/extension-text-style": "2.0.0-beta.23",
+    "@tiptap/extension-underline": "2.0.0-beta.23",
+    "@tiptap/react": "2.0.0-beta.108",
+    "@tiptap/starter-kit": "2.0.0-beta.183",
+    "prop-types": "15.7.2",
+    "react-toastify": "6.0.8"
+  },
+  "bugs": {
+    "url": "https://github.com/blastup/core_cms-components/issues"
+  },
+  "homepage": "https://github.com/blastup/core_cms-components#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
