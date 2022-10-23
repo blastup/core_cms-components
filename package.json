@@ -10,6 +10,7 @@
   "author": "privacy@blastup.digital",
   "license": "UNLICENSED",
   "dependencies": {
+    "codemirror": "^5.61.1",
     "react": "17.0.2",
     "react-codemirror2": "7.2.1",
     "react-dom": "17.0.2",
