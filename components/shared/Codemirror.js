@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { UnControlled as CodeMirror } from 'react-codemirror2'
-import './codemirror.scss'
+import './Codemirror.scss'
 
 export default function Codemirror({ value, setValue }) {
   const [codemirror, setCodemirror] = useState(value || '')

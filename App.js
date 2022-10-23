@@ -5,7 +5,6 @@ import FlashMessage from './components/shared/FlashMessage'
 import FlashMessages from './components/shared/FlashMessages'
 import GlobalLoader from './components/shared/GlobalLoader'
 import Help from './components/shared/Help'
-import InformationIcon from './components/shared/InformationIcon'
 import InputField from './components/shared/InputField'
 import Modal from './components/shared/Modal'
 import ModalAlert from './components/shared/ModalAlert'
@@ -17,6 +16,5 @@ import TextEditor from './components/shared/TextEditor'
 
 export {
   Button, Codemirror, EntityLoader, FlashMessage, FlashMessages, GlobalLoader, Help,
-  InformationIcon, InputField, Modal, ModalAlert, NumberInput, RadioInput, SelectInput,
-  Tabs, TextEditor
+  InputField, Modal, ModalAlert, NumberInput, RadioInput, SelectInput, Tabs, TextEditor
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import './Help.scss'
 
 export default function Help({ text }) {
 

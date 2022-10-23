@@ -22,12 +22,14 @@ Shared components used for the Apps Store apps created for Reactive Online, Card
 ### Components props
 
 <b> Button Props </b>
-- linkTo: The url of your button. This is required.
 - className: If you would like a custom css class for your button.
 - onClick: Anonymous function for your button that can also include a link.
 - value: The text of your button.
+- disabled: Boolean for disabling the button
 
 <b> Codemirror </b>
+- value: Current value
+- onChange: Function to pass change value
 
 <b> EntityLoader </b>
 - position: You can choose from right, left, center

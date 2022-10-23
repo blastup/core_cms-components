@@ -1,4 +1,5 @@
 import React from 'react'
+import './Tabs.scss'
 
 export default function Tabs({ tabs, currentTab, setCurrentTab, extraClasses }) {
   return (

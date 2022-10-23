@@ -10,11 +10,11 @@ export default function Modal({
   return (
     <>
       { visible &&
-        <div className='main-modal'>
+        <div className='main-modal flex-box content-center items-center'>
           <div className='overlay' onClick={ closeModal }/>
           <div className={ `modal-content flex-box flex-column builderContent ${ mode || 'medium' }` }>
             <div className='modal-body'>
-              <div className='close-modal'
+              <div className='close-modal flex-box items-center content-center'
                 onClick={ closeModal }
               >
                 <i className='fa-light fa-xmark'/>

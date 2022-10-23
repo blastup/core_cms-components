@@ -1,0 +1,106 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+.text-editor {
+  width: 100%;
+  overflow: hidden;
+  ::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+    background: transparent;
+  }
+  .text-editor-menu {
+    display: flex;
+    align-items: center;
+    border: 1px solid #eeeeee;
+    overflow-x: auto;
+    width: 100%;
+    margin: 5px 0px;
+    .editor-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      border: none;
+      box-shadow: none;
+      border-right: 1px solid #eeeeee;
+      border-radius: 0px;
+      min-width: 30px;
+      height: 35px;
+      padding: 0;
+      &.spacer {
+        cursor: unset !important;
+        &:hover {
+          background: #ffffff;
+        }
+      }
+      &.is-active {
+        color: #ffffff;
+      }
+      &:hover {
+        background: #f7f7f7;
+      }
+      i {
+        font-style: normal;
+      }
+    }
+    input[type="color"] {
+      border-right: 1px solid #eeeeee !important;
+      border-top: 0px !important;
+      border-bottom: 0px !important;
+      border-left: 0px !important;
+      cursor: pointer;
+      background: #ffffff;
+      border-radius: 0px !important;
+      border: none;
+      box-shadow: none;
+      width: 35px;
+      height: 35px;
+      padding: 0;
+      &:hover {
+        background: #ffffff;
+      }
+    }
+  }
+  .text-editor-content {
+    border: 2px solid #eeeeee;
+    .ProseMirror {
+      width: 100%;
+      min-height: 180px;
+      max-height: 180px;
+      padding: 10px;
+      overflow-y: scroll;
+      resize: none;
+      &.ProseMirror-focused {
+        border: none !important;
+        outline: none;
+      }
+      ul {
+        margin: 0px 0px 0px 40px;
+        li {
+          list-style: disc;
+        }
+      }
+      code {
+        font-family: Courier;
+        background-color: #eeeeee;
+      }
+      a {
+        font-weight: 700;
+      }
+      blockquote {
+        margin: 0 0 0 0.3em;
+        padding: 0 0 0 0.6em;
+        border-left: 0.3em solid #cccccc;
+      }
+    }
+  }
+  .character-count {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    div {
+      color: #888888;
+      font-size: 13px;
+    }
+  }
+}

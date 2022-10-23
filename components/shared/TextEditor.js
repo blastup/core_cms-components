@@ -9,6 +9,7 @@ import CharacterCount from '@tiptap/extension-character-count'
 import TextStyle from '@tiptap/extension-text-style'
 import { Color } from '@tiptap/extension-color'
 import Dropcursor from '@tiptap/extension-dropcursor'
+import './TextEditor.scss'
 
 function MenuBar({ editor }) {
 
@@ -49,7 +50,7 @@ function MenuBar({ editor }) {
           }}
           className={ `editor-button ${ editor.isActive('bold') ? 'is-active' : '' }` }
         >
-          <i className="fa-light fa-bold"></i>
+          <i className="fa-solid fa-bold"></i>
         </button>
 
         <button
@@ -59,7 +60,7 @@ function MenuBar({ editor }) {
           }}
           className={ `editor-button ${ editor.isActive('italic') ? 'is-active' : '' }` }
         >
-          <i className="fa-light fa-italic"></i>
+          <i className="fa-solid fa-italic"></i>
         </button>
         <button
           onClick={ event => {
@@ -68,7 +69,7 @@ function MenuBar({ editor }) {
           }}
           className={ `editor-button ${ editor.isActive('underline') ? 'is-active' : '' }` }
         >
-          <i className="fa-light fa-underline"></i>
+          <i className="fa-solid fa-underline"></i>
         </button>
         <button
           onClick={ event => {
@@ -77,7 +78,7 @@ function MenuBar({ editor }) {
           }}
           className={ `editor-button ${ editor.isActive('strike') ? 'is-active' : '' }` }
         >
-          <i className="fa-light fa-strikethrough"></i>
+          <i className="fa-solid fa-strikethrough"></i>
         </button>
         <button className='editor-button'>
           <input
@@ -96,7 +97,7 @@ function MenuBar({ editor }) {
           }}
           className={ `editor-button bullet-list ${ editor.isActive('bulletList') ? 'is-active' : '' }` }
         >
-          <i className="fa-light fa-list"></i>
+          <i className="fa-solid fa-list"></i>
         </button>
         <button
           onClick={ event => {
@@ -105,7 +106,7 @@ function MenuBar({ editor }) {
           }}
           className={ `editor-button numbered-list ${ editor.isActive('orderedList') ? 'is-active' : '' }` }
         >
-          <i className="fa-light fa-list-ol"></i>
+          <i className="fa-solid fa-list-ol"></i>
         </button>
         <button
           onClick={ event => {
@@ -114,7 +115,7 @@ function MenuBar({ editor }) {
           }}
           className={ `editor-button ${ editor.isActive('blockquote') ? 'is-active' : '' }` }
         >
-          <i className="fa-light fa-block-quote"></i>
+          <i className="fa-solid fa-block-quote"></i>
         </button>
         <button
           onClick={ event => {
@@ -135,7 +136,7 @@ function MenuBar({ editor }) {
           }}
           className={ `editor-button ${ editor.isActive({ textAlign: 'left' }) ? 'is-active' : '' }` }
         >
-          <i className="fa-light fa-align-left"></i>
+          <i className="fa-solid fa-align-left"></i>
         </button>
         <button
           onClick={ event => {
@@ -144,7 +145,7 @@ function MenuBar({ editor }) {
           }}
           className={ `editor-button ${ editor.isActive({ textAlign: 'center' }) ? 'is-active' : '' }` }
         >
-          <i className="fa-light fa-align-center"></i>
+          <i className="fa-solid fa-align-center"></i>
         </button>
         <button
           onClick={ event => {
@@ -153,7 +154,7 @@ function MenuBar({ editor }) {
           }}
           className={ `editor-button ${ editor.isActive({ textAlign: 'right' }) ? 'is-active' : '' }` }
         >
-          <i className="fa-light fa-align-right"></i>
+          <i className="fa-solid fa-align-right"></i>
         </button>
         <button
           onClick={ event => {
@@ -162,7 +163,7 @@ function MenuBar({ editor }) {
           }}
           className={ `editor-button ${ editor.isActive({ textAlign: 'justify' }) ? 'is-active' : '' }` }
         >
-          <i className="fa-light fa-align-justify"></i>
+          <i className="fa-solid fa-align-justify"></i>
         </button>
 
         <button className='editor-button spacer'></button>
@@ -174,27 +175,27 @@ function MenuBar({ editor }) {
           }}
           className={ `editor-button ${ editor.isActive('code') ? 'is-active' : '' }` }
         >
-          <i className="fa-light fa-code-simple"></i>
+          <i className="fa-solid fa-code-simple"></i>
         </button>
 
         <button onClick={setLink} className={ `editor-button ${ editor.isActive('link') ? 'is-active' : '' }` }>
-          <i className="fa-light fa-link-simple"></i>
+          <i className="fa-solid fa-link-simple"></i>
         </button>
         <button
           onClick={() => editor.chain().focus().unsetLink().run()}
           disabled={!editor.isActive('link')}
           className='editor-button'
         >
-          <i className="fa-light fa-link-simple-slash"></i>
+          <i className="fa-solid fa-link-simple-slash"></i>
         </button>
 
         <button className='editor-button spacer'></button>
 
         <button onClick={() => editor.chain().focus().undo().run()} disabled={!editor.can().undo()} className='editor-button'>
-          <i className="fa-light fa-rotate-left"></i>
+          <i className="fa-solid fa-rotate-left"></i>
         </button>
         <button onClick={() => editor.chain().focus().redo().run()} disabled={!editor.can().redo()} className='editor-button'>
-          <i className="fa-light fa-rotate-right"></i>
+          <i className="fa-solid fa-rotate-right"></i>
         </button>
 
       </div>
