@@ -1,6 +1,6 @@
 {
   "name": "@blastup/core_cms-components",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Usable components for the Apps Store projects.",
   "main": "./App.js",
   "repository": {
