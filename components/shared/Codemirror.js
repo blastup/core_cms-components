@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { UnControlled as CodeMirror } from 'react-codemirror2'
 
-export default function Codemirror({ value, setCodemirror }) {
+export default function Codemirror({ value, setValue }) {
   const [codemirror, setCodemirror] = useState(value || '')
 
   return (
@@ -14,7 +14,7 @@ export default function Codemirror({ value, setCodemirror }) {
         autoCursor: true,
         autoScroll: true
       }}
-      onChange={ setCodemirror }
+      onChange={ setValue }
     />
   )
 }
