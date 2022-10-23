@@ -27,7 +27,8 @@
     "@tiptap/react": "2.0.0-beta.108",
     "@tiptap/starter-kit": "2.0.0-beta.183",
     "prop-types": "15.7.2",
-    "react-toastify": "6.0.8"
+    "react-toastify": "6.0.8",
+    "sass-loader": "7.1.0"
   },
   "bugs": {
     "url": "https://github.com/blastup/core_cms-components/issues"
